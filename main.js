@@ -1,7 +1,7 @@
 /*function enviarAlerta () {
 	let dato = document.getElementsByName('altura')[0].value;
 	alert(dato);}*/
-document.getElementById('info').innerHTML = 'Por favor, relleno los campos de Altura y Peso para calcular su IMC.';
+document.getElementById('info').innerHTML = 'Por favor, rellene los campos de Altura y Peso para calcular su IMC.';
 function calcularProducto() {
 	var altura = document.getElementById('altura').value;
 	var peso = document.getElementById('peso').value;

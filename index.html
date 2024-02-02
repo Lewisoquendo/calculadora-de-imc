@@ -1,57 +1,86 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Calculadora del IMC</title>
-	<link rel = 'stylesheet' href='styles.css'/>
+	<link rel='stylesheet' href='styles.css' />
 </head>
+
 <body>
 	<header style="margin-left: 15%;">
-		<img src="media/Banner.png" width="80%" >
+		<img src="media/Banner.png" width="80%">
 	</header>
-	<div class = "introduccion">
-		<h2>¿Que es el IMC?</h2>
-		<p>
-			El Índice de Masa Corporal (IMC) es una medida que se utiliza para evaluar si una persona tiene un peso saludable en relación con su altura. Se calcula dividiendo el peso de una persona en kilogramos por el cuadrado de su altura en metros.
-		</p>
-		<p>Aquí están las categorías de nivel de peso según el IMC para adultos de 20 años o más:</p>
-		<ul>
-			<li><b>Por debajo de 18.5:</b> Bajo peso</li>
-			<li><b>18.5—24.9:</b> Peso saludable</li>
-			<li><b>25.0—29.9:</b> Sobrepeso</li>
-			<li><b> 30.0 o más:</b> Obesidad </li>
-		</ul>
-
-		<h3>Recomendaciones Para Regular tu IMC:</h3>
-		<ul>
-		<li><b>Establece horarios al comer:</b>No permitas que se alteren o desordenen tus horas de comer. Si comes a deshoras, lo harás con más ansiedad y devorarás todo lo que encuentres a tu paso</li>
-		<li><b>Balancea tu plato:</b>Recuerda que el 50% de tu plato debe ser de verduras, el 25% de proteínas y el otro 25% de carbohidratos.</li>
-		<li><b>Realiza actividad física:</b> Hacer 30 minutos de ejercicio aeróbico 5 veces por semana puede ayudarte a mantener un peso saludable</li>
-		<li><b>Limita las grasas saturadas:</b> No deben representar más del 7% de las calorías totales.</li>
-		<li><b>Alimentación baja en colesterol:</b> Consume carnes magras, frutas, verduras y cereales integrales.</li>
-		<li><b>Hidratación:</b> Es muy importante, al día toma al menos un litro de agua.</li>
-		<li><b>Actividad deportiva:</b> Al día realiza mínimo 30 minutos de actividad deportiva, haz estiramientos que favorecen a tu circulación.</li>
-		</ul>
-	</div>
+	<br>
 	<div class="calculadora">
 		<h1>Calcular su IMC:</h1>
 		<!--<script src="script.js"></script>-->
 		<form action="index.html" class="formulario" method="post">
 			<label for="altura">Introduzca su altura en metros: </label>
-			<input type="number" id = "altura" name="altura" placeholder="Ejemplo: 1.80">
+			<input type="number" id="altura" name="altura" placeholder="Ejemplo: 1.80">
 			<br>
 			<br>
 			<label for="peso">Introduzca su peso en Kilogramos: </label>
-			<input type="number" id = 'peso' name="peso" placeholder="Ejemplo: 55">
-			<<!--<input type="button" name="enviar" value="Enviar" onclick="enviarAlerta();">-->
-			<input type="button" value="Calcular" onclick="calcularProducto()">
+			<input type="number" id='peso' name="peso" placeholder="Ejemplo: 70">
+			<!--<input type="button" name="enviar" value="Enviar" onclick="enviarAlerta();">-->
+			<span class='calcu'></span>
+			<span class='calcu'></span>
+			<span class='calcu'></span>
+			<span class='calcu'></span>
+		
+			<br><b><input  class ="calcular" type="button" value="Calcular" onclick="calcularProducto()"></b>
 		</form>
 		<p class="resultado">
 			Su IMC es: <b><span id="imc"></span></b>
 			<br>Detalles acerca de su IMC: <b><span id="info"></span></b>
 		</p>
 	</div>
+
+
+	<div class="introduccion">
+		<h2>¿Que es el IMC?</h2>
+		<p>
+			El Índice de Masa Corporal (IMC) es una medida que se utiliza para evaluar si una persona tiene un peso
+			saludable en relación con su altura. Se calcula dividiendo el peso de una persona en kilogramos por el
+			cuadrado de su altura en metros.
+		</p>
+		<p>Aquí están las categorías de nivel de peso según el IMC para adultos de 20 años o más:</p>
+		<ul>
+			<li><b>Por debajo de 18.5:</b> Bajo peso</li><br>
+			<li><b>18.5—24.9:</b> Peso saludable</li><br>
+			<li><b>25.0—29.9:</b> Sobrepeso</li><br>
+			<li><b> 30.0 o más:</b> Obesidad </li>
+		</ul><br>
+
+		<h3>Recomendaciones Para Regular tu IMC:</h3>
+		<ul>
+			<br>
+			<li><b>Establece horarios al comer:</b>No permitas que se alteren o desordenen tus horas de comer. Si comes
+				a deshoras, lo harás con más ansiedad y devorarás todo lo que encuentres a tu paso</li>
+			<br>
+			<li><b>Balancea tu plato:</b>Recuerda que el 50% de tu plato debe ser de verduras, el 25% de proteínas y el
+				otro 25% de carbohidratos.</li>
+			<br>
+			<li><b>Realiza actividad física:</b> Hacer 30 minutos de ejercicio aeróbico 5 veces por semana puede
+				ayudarte a mantener un peso saludable</li>
+			<br>
+			<li><b>Limita las grasas saturadas:</b> No deben representar más del 7% de las calorías totales.</li>
+			<br>
+			<li><b>Alimentación baja en colesterol:</b> Consume carnes magras, frutas, verduras y cereales integrales.
+			</li>
+			<br>
+			<li><b>Hidratación:</b> Es muy importante, al día toma al menos un litro de agua.</li>
+			<br>
+			<li><b>Actividad deportiva:</b> Al día realiza mínimo 30 minutos de actividad deportiva, haz estiramientos
+				que favorecen a tu circulación.</li>
+		</ul>
+	</div>
+	<footer>
+		<p style="text-align: center;">Created By Lewis Oquendo. <br>Teacher: Victor Steller <br>Universidad de Carabobo
+			<br>Facultad De Ingenieria <br>Computtacion II</p>
+	</footer>
 	<script src="main.js"></script>
 </body>
+
 </html>

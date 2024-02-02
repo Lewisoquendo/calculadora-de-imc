@@ -1,7 +1,112 @@
-body{
+body {
 	font-family: sans-serif;
 	background: linear-gradient(#141e30, #243b55);
-	
+	margin: 10PX 10px 10px 10px;
 }
-*{color: white;}
+
+img {
+	border-width: 10px;
+	border-style: groove;
+	border-color: cadetblue;
+	border-radius: 15px;
+	display: block;
+
+}
+
+div {
+	margin: 2% 20% 0% 15%;
+}
+
+* {
+	color: white;
+}
+
+input {
+	color: black;
+}
+
+.calculadora {
+	margin: auto;
+	text-align: center;
+	display: block;
+	top: 50%;
+	left: 50%;
+	width: 400px;
+	padding: 40px;
+	/*transform: translate(-50%, -50%);*/
+	background: rgba(0, 0, 0, .5);
+	box-sizing: border-box;
+	box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+	border-radius: 10px;
+
+	h1 {
+		margin: 0 0 30px;
+		padding: 0;
+		color: #fff;
+		text-align: center;
+	}
+
+	input {
+		text-align: center;
+		width: 100%;
+		padding: 10px 0;
+		font-size: 16px;
+		color: #fff;
+		margin-bottom: 30px;
+		border: none;
+		border-bottom: 1px solid #fff;
+		outline: none;
+		background: transparent;
+	}
+	.calcular{
+		text-align: center;
+		font-size: larger;
+		font-size: 16px;
+  		text-decoration: none;
+		overflow: hidden;
+  		text-transform: uppercase;
+		padding: 10px 20px;
+		color: #03e9f4;
+		transition: .5s;
+		letter-spacing: 2px
+
+		
+		
+	}
+	.calcular:hover{
+		background: #03e9f4;
+		color: #fff;
+		border-radius: 5px;
+		box-shadow: 0 0 5px #03e9f4,
+					0 0 25px #03e9f4,
+					0 0 50px #03e9f4,
+					0 0 100px #03e9f4;
+	}
+
+}
+
+
+.introduccion {
+	display: block;
+}
+
+h1,
+h2,
+h3 {
+	text-shadow: 20px black;
+}
+
+footer {
+	background-color: #141e30;
+	margin-top: 50px;
+	border-width: 10px;
+	border-style: groove;
+	border-color: cadetblue;
+	border-radius: 15px;
+	padding: 0.5%;
+
+
+
+}
+
 /*https://codepen.io/soufiane-khalfaoui-hassani/pen/LYpPWda*/
